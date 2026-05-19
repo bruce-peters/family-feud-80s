@@ -114,7 +114,7 @@ export function Host() {
         </Section>
       </aside>
 
-      <StrikeOverlay show={showStrike} />
+      <StrikeOverlay show={showStrike} count={strikes} />
     </div>
   );
 }

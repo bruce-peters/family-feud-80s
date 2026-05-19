@@ -9,6 +9,7 @@ export function BoardView() {
   const teams = useGame((s) => s.teams);
   const activeTeam = useGame((s) => s.activeTeam);
   const showStrike = useGame((s) => s.showStrike);
+  const strikes = useGame((s) => s.strikes);
   const roundIndex = useGame((s) => s.roundIndex);
   const totalRounds = useGame((s) => s.rounds.length);
 
@@ -22,7 +23,7 @@ export function BoardView() {
       <div className="text-center text-feud-yellow font-feud text-2xl pb-3 tracking-widest">
         ROUND {roundIndex + 1} / {totalRounds}
       </div>
-      <StrikeOverlay show={showStrike} />
+      <StrikeOverlay show={showStrike} count={strikes} />
     </div>
   );
 }
