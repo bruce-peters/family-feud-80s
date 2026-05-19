@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Bebas+Neue&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-feud-yellow: #f5c542;
+  --color-feud-yellow-dk: #c89a25;
+  --color-feud-blue: #0a2a6b;
+  --color-feud-blue-dk: #061a45;
+  --color-feud-red: #d62828;
+  --color-feud-bezel: #0a0a0a;
+  --color-feud-cream: #f4e9c8;
+  --font-dot: "VT323", monospace;
+  --font-feud: "Bebas Neue", "Arial Black", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: #061a45;
+  color: white;
+  font-family: var(--font-feud);
+}
+
+.dot-display {
+  background: #1a0e00;
+  color: #ffb31a;
+  font-family: var(--font-dot);
+  text-shadow: 0 0 8px #ff8c00, 0 0 14px #ff6600;
+  letter-spacing: 0.1em;
+  border: 4px solid #000;
+  border-radius: 8px;
+  padding: 0.1em 0.4em;
+  box-shadow: inset 0 0 30px rgba(0,0,0,0.8);
+}
+
+.x-cover {
+  background-color: #f5c542;
+  background-image:
+    linear-gradient(135deg, transparent 42%, #a30000 42%, #a30000 58%, transparent 58%),
+    linear-gradient(45deg, transparent 42%, #a30000 42%, #a30000 58%, transparent 58%);
+  background-size: 28px 28px, 28px 28px;
+}
+
+@keyframes strikeStamp {
+  0%   { transform: scale(3) rotate(-8deg); opacity: 0; }
+  18%  { transform: scale(1) rotate(-4deg); opacity: 1; }
+  22%  { transform: scale(0.94) rotate(-4deg); }
+  28%  { transform: scale(1) rotate(-4deg); }
+  85%  { transform: scale(1) rotate(-4deg); opacity: 1; }
+  100% { transform: scale(1) rotate(-4deg); opacity: 0; }
+}
+.strike-stamp { animation: strikeStamp 1600ms ease-out forwards; opacity: 0; }
+
+@keyframes flipReveal {
+  0%   { transform: rotateX(0); }
+  50%  { transform: rotateX(90deg); }
+  100% { transform: rotateX(0); }
+}
+.flip-anim { animation: flipReveal 500ms ease-in-out; }

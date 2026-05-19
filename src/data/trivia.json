@@ -1,0 +1,169 @@
+[
+  {
+    "question": "Name a popular 80s video game.",
+    "answers": [
+      { "text": "Pac-Man", "points": 40 },
+      { "text": "Donkey Kong", "points": 25 },
+      { "text": "Tetris", "points": 18 },
+      { "text": "Super Mario Bros", "points": 12 },
+      { "text": "Space Invaders", "points": 5 }
+    ]
+  },
+  {
+    "question": "Name something teens would do with friends on the weekends in the 80s.",
+    "answers": [
+      { "text": "Go to the mall", "points": 35 },
+      { "text": "Go to the arcade", "points": 25 },
+      { "text": "Watch movies / MTV", "points": 22 },
+      { "text": "Go to roller rinks", "points": 18 }
+    ]
+  },
+  {
+    "question": "Name a major American social issue of the 1980s.",
+    "answers": [
+      { "text": "AIDS crisis", "points": 40 },
+      { "text": "Crack epidemic", "points": 28 },
+      { "text": "Homelessness", "points": 18 },
+      { "text": "War on Drugs", "points": 10 },
+      { "text": "Nuclear fear", "points": 4 }
+    ]
+  },
+  {
+    "question": "Name a presidential candidate from the 1980s elections.",
+    "answers": [
+      { "text": "Ronald Reagan", "points": 40 },
+      { "text": "George H.W. Bush", "points": 25 },
+      { "text": "Jimmy Carter", "points": 18 },
+      { "text": "Walter Mondale", "points": 10 },
+      { "text": "Michael Dukakis", "points": 7 }
+    ]
+  },
+  {
+    "question": "Name something associated with Ronald Reagan.",
+    "answers": [
+      { "text": "Tax cuts", "points": 35 },
+      { "text": "Cold War", "points": 28 },
+      { "text": "Jelly beans", "points": 18 },
+      { "text": "Iran-Contra", "points": 12 },
+      { "text": "\"Tear down this wall\"", "points": 7 }
+    ]
+  },
+  {
+    "question": "Name a top musical artist or band from the 80s.",
+    "answers": [
+      { "text": "Michael Jackson", "points": 42 },
+      { "text": "Madonna", "points": 28 },
+      { "text": "Prince", "points": 15 },
+      { "text": "Bon Jovi", "points": 9 },
+      { "text": "Guns N' Roses", "points": 6 }
+    ]
+  },
+  {
+    "question": "Name a country where the US carried out a government overthrow in the 80s.",
+    "answers": [
+      { "text": "Nicaragua", "points": 40 },
+      { "text": "Panama", "points": 28 },
+      { "text": "El Salvador", "points": 20 },
+      { "text": "Libya", "points": 18 },
+      { "text": "Grenada", "points": 4 }
+    ]
+  },
+  {
+    "question": "Name something people listened to music on in the 1980s.",
+    "answers": [
+      { "text": "Walkman", "points": 42 },
+      { "text": "Radio", "points": 28 },
+      { "text": "Boom box", "points": 15 },
+      { "text": "Record player", "points": 10 },
+      { "text": "Car stereo", "points": 5 }
+    ]
+  },
+  {
+    "question": "Name something kids played with in the 1980s.",
+    "answers": [
+      { "text": "Rubik's Cube", "points": 38 },
+      { "text": "Transformers", "points": 25 },
+      { "text": "Atari", "points": 20 },
+      { "text": "Cabbage Patch Kids", "points": 12 },
+      { "text": "He-Man figures", "points": 5 }
+    ]
+  },
+  {
+    "question": "Name one of the most popular hairstyles of the 80s.",
+    "answers": [
+      { "text": "Mullet", "points": 35 },
+      { "text": "High-volume perm", "points": 28 },
+      { "text": "Crimped hair", "points": 18 },
+      { "text": "Side ponytail", "points": 13 },
+      { "text": "Mohawk", "points": 6 }
+    ]
+  },
+  {
+    "question": "Name a word people used to mean \"cool\" in the 1980s.",
+    "answers": [
+      { "text": "Rad", "points": 38 },
+      { "text": "Gnarly", "points": 25 },
+      { "text": "Tubular", "points": 18 },
+      { "text": "Bodacious", "points": 12 },
+      { "text": "Fresh", "points": 7 }
+    ]
+  },
+  {
+    "question": "Name an important US economic decision of the 1980s.",
+    "answers": [
+      { "text": "Supply-side economics", "points": 38 },
+      { "text": "Deregulation of industry", "points": 32 },
+      { "text": "Limiting grain sales to the USSR", "points": 18 }
+    ]
+  },
+  {
+    "question": "Name a famous athlete from the 1980s.",
+    "answers": [
+      { "text": "Michael Jordan", "points": 40 },
+      { "text": "Magic Johnson", "points": 28 },
+      { "text": "Larry Bird", "points": 18 },
+      { "text": "Wayne Gretzky", "points": 10 },
+      { "text": "Carl Lewis", "points": 4 }
+    ]
+  },
+  {
+    "question": "Name one of the highest-grossing films of the 80s.",
+    "answers": [
+      { "text": "E.T.", "points": 38 },
+      { "text": "Star Wars", "points": 25 },
+      { "text": "Indiana Jones", "points": 16 },
+      { "text": "Back to the Future", "points": 13 },
+      { "text": "Batman", "points": 8 }
+    ]
+  },
+  {
+    "question": "Name a major world event from the 1980s.",
+    "answers": [
+      { "text": "Berlin Wall falling", "points": 40 },
+      { "text": "Chernobyl", "points": 28 },
+      { "text": "Challenger explosion", "points": 18 },
+      { "text": "Iran-Contra", "points": 8 },
+      { "text": "Tiananmen Square", "points": 6 }
+    ]
+  },
+  {
+    "question": "Name a popular 80s TV show.",
+    "answers": [
+      { "text": "The Cosby Show", "points": 38 },
+      { "text": "Cheers", "points": 25 },
+      { "text": "Miami Vice", "points": 18 },
+      { "text": "Family Ties", "points": 12 },
+      { "text": "Dallas", "points": 7 }
+    ]
+  },
+  {
+    "question": "Name something people wore as a fashion trend in the 1980s.",
+    "answers": [
+      { "text": "Leg warmers", "points": 35 },
+      { "text": "Shoulder pads", "points": 28 },
+      { "text": "Neon colors", "points": 20 },
+      { "text": "Parachute pants", "points": 12 },
+      { "text": "Scrunchies", "points": 5 }
+    ]
+  }
+]
