@@ -4,6 +4,7 @@ import { useGame } from '../store';
 import { Board } from '../components/Board';
 import { StrikeOverlay } from '../components/StrikeOverlay';
 import { matchAnswer } from '../lib/match';
+import { playSound, stopSound } from '../lib/sounds';
 
 export function Host() {
   useGameSync('host');
@@ -106,6 +107,16 @@ export function Host() {
             <Btn onClick={prevRound}>◀ Prev</Btn>
             <Btn onClick={nextRound}>Next ▶</Btn>
             <Btn variant="red" onClick={() => { if (confirm('Reset entire game?')) resetGame(); }}>Reset Game</Btn>
+          </div>
+        </Section>
+
+        <Section title="Sounds">
+          <div className="flex flex-wrap gap-2">
+            <Btn onClick={() => playSound('/sounds/correct.mp3')}>✓ Correct</Btn>
+            <Btn variant="red" onClick={() => playSound('/sounds/buzzer.mp3')}>✕ Buzzer</Btn>
+            <Btn onClick={() => playSound('/sounds/clap.mp3')}>👏 Clap</Btn>
+            <Btn variant="yellow" onClick={() => playSound('/sounds/intro.mp3')}>🎵 Intro</Btn>
+            <Btn variant="red" onClick={stopSound}>⏹ Stop</Btn>
           </div>
         </Section>
 

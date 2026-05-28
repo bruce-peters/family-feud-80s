@@ -3,7 +3,16 @@ import type { GameState, Round } from './types';
 import triviaData from './data/trivia.json';
 import { play } from './lib/sounds';
 
-const rounds = triviaData as Round[];
+function shuffle<T>(arr: T[]): T[] {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+const rounds = shuffle(triviaData as Round[]);
 
 function initialRevealed(r: Round): boolean[] {
   return new Array(r.answers.length).fill(false);

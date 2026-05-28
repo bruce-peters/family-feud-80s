@@ -59,16 +59,6 @@
     ]
   },
   {
-    "question": "Name a country where the US carried out a government overthrow in the 80s.",
-    "answers": [
-      { "text": "Nicaragua", "points": 40 },
-      { "text": "Panama", "points": 28 },
-      { "text": "El Salvador", "points": 20 },
-      { "text": "Libya", "points": 18 },
-      { "text": "Grenada", "points": 4 }
-    ]
-  },
-  {
     "question": "Name something people listened to music on in the 1980s.",
     "answers": [
       { "text": "Walkman", "points": 42 },
@@ -84,18 +74,18 @@
       { "text": "Rubik's Cube", "points": 38 },
       { "text": "Transformers", "points": 25 },
       { "text": "Atari", "points": 20 },
-      { "text": "Cabbage Patch Kids", "points": 12 },
-      { "text": "He-Man figures", "points": 5 }
+      { "text": "Nintendo / NES", "points": 12 },
+      { "text": "Cabbage Patch Kids", "points": 5 }
     ]
   },
   {
-    "question": "Name one of the most popular hairstyles of the 80s.",
+    "question": "Name a major Cold War leader or figure from the 1980s.",
     "answers": [
-      { "text": "Mullet", "points": 35 },
-      { "text": "High-volume perm", "points": 28 },
-      { "text": "Crimped hair", "points": 18 },
-      { "text": "Side ponytail", "points": 13 },
-      { "text": "Mohawk", "points": 6 }
+      { "text": "Ronald Reagan", "points": 38 },
+      { "text": "Mikhail Gorbachev", "points": 28 },
+      { "text": "Margaret Thatcher", "points": 18 },
+      { "text": "Pope John Paul II", "points": 10 },
+      { "text": "Fidel Castro", "points": 6 }
     ]
   },
   {
@@ -109,11 +99,43 @@
     ]
   },
   {
-    "question": "Name an important US economic decision of the 1980s.",
+    "question": "Name a new technology that changed American life in the 1980s.",
     "answers": [
-      { "text": "Supply-side economics", "points": 38 },
-      { "text": "Deregulation of industry", "points": 32 },
-      { "text": "Limiting grain sales to the USSR", "points": 18 }
+      { "text": "Personal computer / PC", "points": 38 },
+      { "text": "VCR / video rental", "points": 25 },
+      { "text": "Cable TV / MTV", "points": 20 },
+      { "text": "Walkman / portable cassette player", "points": 12 },
+      { "text": "Video game consoles", "points": 5 }
+    ]
+  },
+  {
+    "question": "Name an important US economic policy or event of the 1980s.",
+    "answers": [
+      { "text": "Supply-side / trickle-down economics", "points": 38 },
+      { "text": "Deregulation", "points": 28 },
+      { "text": "Tax cuts", "points": 18 },
+      { "text": "National debt increase", "points": 10 },
+      { "text": "Savings & Loan crisis", "points": 6 }
+    ]
+  },
+  {
+    "question": "Name a Gorbachev reform or policy from the 1980s.",
+    "answers": [
+      { "text": "Glasnost (openness)", "points": 40 },
+      { "text": "Perestroika (restructuring)", "points": 28 },
+      { "text": "INF Treaty / nuclear arms reduction", "points": 18 },
+      { "text": "Withdrawing from Afghanistan", "points": 10 },
+      { "text": "Allowing Soviet satellite states independence", "points": 4 }
+    ]
+  },
+  {
+    "question": "Name something associated with Reagan's War on Drugs.",
+    "answers": [
+      { "text": "\"Just Say No\" campaign", "points": 40 },
+      { "text": "Anti-Drug Abuse Act of 1986", "points": 28 },
+      { "text": "Mass incarceration", "points": 18 },
+      { "text": "Nancy Reagan", "points": 10 },
+      { "text": "Crack cocaine sentencing disparity", "points": 4 }
     ]
   },
   {
@@ -130,7 +152,7 @@
     "question": "Name one of the highest-grossing films of the 80s.",
     "answers": [
       { "text": "E.T.", "points": 38 },
-      { "text": "Star Wars", "points": 25 },
+      { "text": "Star Wars (Return of the Jedi)", "points": 25 },
       { "text": "Indiana Jones", "points": 16 },
       { "text": "Back to the Future", "points": 13 },
       { "text": "Batman", "points": 8 }
@@ -147,13 +169,21 @@
     ]
   },
   {
-    "question": "Name a popular 80s TV show.",
+    "question": "Name one of the \"four H\" at risk categories designated by the federal government during the AIDS Crisis.",
     "answers": [
-      { "text": "The Cosby Show", "points": 38 },
-      { "text": "Cheers", "points": 25 },
-      { "text": "Miami Vice", "points": 18 },
-      { "text": "Family Ties", "points": 12 },
-      { "text": "Dallas", "points": 7 }
+      { "text": "Homosexuals", "points": 40 },
+      { "text": "Heroin Users", "points": 28 },
+      { "text": "Hemophiliacs", "points": 20 },
+      { "text": "Haitians", "points": 4 }
+    ]
+  },
+  {
+    "question": "Name one of the four pillars of Reaganomics.",
+    "answers": [
+      { "text": "Reducing Taxes", "points": 40 },
+      { "text": "Deregulation", "points": 28 },
+      { "text": "Reducing Government spending", "points": 18 },
+      { "text": "Controlling growth of money supply", "points": 10 }
     ]
   },
   {
