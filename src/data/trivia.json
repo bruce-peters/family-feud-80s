@@ -43,7 +43,6 @@
     "answers": [
       { "text": "Tax cuts", "points": 35 },
       { "text": "Cold War", "points": 28 },
-      { "text": "Jelly beans", "points": 18 },
       { "text": "Iran-Contra", "points": 12 },
       { "text": "\"Tear down this wall\"", "points": 7 }
     ]
@@ -53,9 +52,9 @@
     "answers": [
       { "text": "Michael Jackson", "points": 42 },
       { "text": "Madonna", "points": 28 },
-      { "text": "Prince", "points": 15 },
-      { "text": "Bon Jovi", "points": 9 },
-      { "text": "Guns N' Roses", "points": 6 }
+      { "text": "Prince", "points": 16 },
+      { "text": "Whitney Houston", "points": 9 },
+      { "text": "Bruce Springsteen", "points": 6 }
     ]
   },
   {
@@ -124,8 +123,7 @@
       { "text": "Glasnost (openness)", "points": 40 },
       { "text": "Perestroika (restructuring)", "points": 28 },
       { "text": "INF Treaty / nuclear arms reduction", "points": 18 },
-      { "text": "Withdrawing from Afghanistan", "points": 10 },
-      { "text": "Allowing Soviet satellite states independence", "points": 4 }
+      { "text": "Allowing Soviet satellite states independence", "points": 14 }
     ]
   },
   {
@@ -136,16 +134,6 @@
       { "text": "Mass incarceration", "points": 18 },
       { "text": "Nancy Reagan", "points": 10 },
       { "text": "Crack cocaine sentencing disparity", "points": 4 }
-    ]
-  },
-  {
-    "question": "Name a famous athlete from the 1980s.",
-    "answers": [
-      { "text": "Michael Jordan", "points": 40 },
-      { "text": "Magic Johnson", "points": 28 },
-      { "text": "Larry Bird", "points": 18 },
-      { "text": "Wayne Gretzky", "points": 10 },
-      { "text": "Carl Lewis", "points": 4 }
     ]
   },
   {
