@@ -1,74 +1,54 @@
-# React + TypeScript + Vite
+# 80s Family Feud
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Family Feud game made for an APUSH class Decades Project, with 1980s-themed survey questions. One window is the host's control panel. A second window is the audience board you put on the projector.
 
-Currently, two official plugins are available:
+**Live:** https://family-feud-80s.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## How to play
 
-## React Compiler
+1. Open the site on the laptop and click **HOST PANEL**.
+2. Click **AUDIENCE BOARD** (or open `/board`) in a second window or tab **in the same browser**, and drag it to the projector.
+3. The host types a team's guess and presses **Check** (or Enter). A fuzzy match reveals the answer on both screens. If nothing matches, press **STRIKE ✕**. The host can also click a slot to reveal it by hand.
+4. Use **Award → TEAM 1 / TEAM 2** to give a team the round's pot. **Next ▶ / ◀ Prev** change rounds. You can also rename teams, set the active team, toggle answer hints, and play sound effects (correct, buzzer, clap, intro).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The host and board sync through the browser's `BroadcastChannel` API. There is no server, so both windows must be in the same browser on the same computer. The question order is shuffled when the host panel loads.
 
-## Expanding the ESLint configuration
+## Run it locally
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Prerequisites:** Node.js 20.19+ or 22.12+ (required by Vite 8), npm. No environment variables or API keys are needed.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/bruce-peters/family-feud-80s.git
+cd family-feud-80s
+npm ci            # or: npm install
+npm run dev       # http://localhost:5173
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Other commands:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build     # type-check (tsc -b) + production build into dist/
+npm run preview   # serve the production build
+npm run lint      # ESLint
 ```
-# family-feud-80s
+
+## Project structure
+
+```
+src/
+  routes/
+    Landing.tsx      # start page: links to /host and /board
+    Host.tsx         # host control panel (guess check, strikes, scoring, rounds, sounds)
+    BoardView.tsx    # audience board for the projector
+  components/        # Board, AnswerSlot, StrikeOverlay, TeamPanel, DotMatrixNumber
+  data/trivia.json   # the survey questions: { question, answers: [{ text, points }] }
+  lib/
+    channel.ts       # BroadcastChannel sync between host and board windows
+    match.ts         # fuzzy answer matching (normalization + Levenshtein distance)
+    sounds.ts        # sound effect playback
+  store.ts           # game state (zustand)
+public/sounds/       # correct / buzzer / clap / intro MP3s
+vercel.json          # SPA rewrite so /host and /board work on refresh
+```
+
+To change the questions, edit `src/data/trivia.json`.
